@@ -4,12 +4,23 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/about.css">
+   <link rel="stylesheet" href="./css/about.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <title>Web Service</title>
+
+   <style>
+      html.is-changing .transition-fade {
+         transition: opacity 2s;
+         opacity: 1;
+      }
+
+      html.is-animating .transition-fade {
+         opacity: 0;
+      }
+   </style>
 </head>
 
 <body>
@@ -68,15 +79,15 @@
             </div>
          </div>
       </section>
-      <section class="sections section-2">
+      <section class="sections section-2 transition-fade">
          <div class="section-2-container">
             <div class="section-2-left containers">
                <h2>About Neal</h2>
                <p>As the driving force behind Neal Service, I bring a wealth of experience and passion to the table. With a background in web development and a keen eye for design, I am dedicated to crafting innovative solutions that exceed client expectations. My journey in the digital realm has been fueled by a commitment to excellence and a relentless pursuit of creativity. Through continuous learning and adaptation to industry trends, I strive to stay ahead of the curve and deliver cutting-edge results for every project I undertake.</p>
                <p>Beyond technical expertise, I pride myself on fostering strong client relationships built on trust, transparency, and effective communication. I believe in the power of collaboration and view each project as a partnership aimed at achieving shared success. By understanding the unique needs and goals of my clients, I tailor my approach to deliver solutions that not only meet but exceed their expectations. With a focus on integrity and customer satisfaction, I am dedicated to helping businesses thrive in the digital landscape.</p>  
             </div>
-            <div class="section-2-right containers">
-               <img class="images-3d" src="assets/me.png" alt="3D Man">
+            <div class="section-2-right containers" style="overflow: hidden;">
+               <div style="width: 100%; height: 100%;" data-vide-bg="assets/coder"></div>
             </div>
          </div>
       </section>
@@ -114,7 +125,18 @@
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
 
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="js/jquery.vide.min.js"></script>
+
+   <script src="https://unpkg.com/@swup/scroll-plugin@3"></script>
+   
+
    <script src="js/sidebarbutton.js"></script>
+
+   <script type="module">
+      import Swup from 'https://unpkg.com/swup@4?module';
+      const swup = new Swup();
+   </script>
 
    <script>
       gsap.registerPlugin(ScrollTrigger);
@@ -127,18 +149,12 @@
       }) 
 
       gsap.to('.section-2', {
-         duration: 5,
+         duration: 4,
          opacity: 1,
          ease:'back',
          scrollTrigger: '.section-2',
       }) 
 
-      gsap.to('.section-3', {
-         duration: 4,
-         opacity: 1,
-         ease:'back',
-         scrollTrigger: '.section-3',
-      }) 
    </script>
 
 </body>

@@ -368,6 +368,7 @@ main .line-x:nth-child(2) {
 .section-2-right {
     display: flex;
     justify-content: end;
+    border-radius: 200px;
 }
 
 .section-3 {
