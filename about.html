@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/about.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <title>Web Service</title>
+</head>
+
+<body>
+
+   <div class="side-bar">
+      <div class="menu">
+         <i class='bx bx-x'></i>
+         <div class="menus">
+            <ul class="menu-lists">
+               <li><a href="./index.html" class="menu-links">Home</a></li>
+               <li><a href="./about.html" class="menu-links">About</a></li>
+               <li><a href="./services.html" class="menu-links">Service</a></li>
+               <li><a href="./contact.html" class="menu-links">Contact</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <nav>
+      <div class="nav-bar">
+         <a href="index.html"><img src="assets/logo-white.png" alt="Logo" width="55"></a>
+         <ul class="menu-lists">
+            <li><a href="./index.html" class="menu-links">Home</a></li>
+            <li><a href="./about.html" class="menu-links">About</a></li>
+            <li><a href="./services.html" class="menu-links">Service</a></li>
+         </ul>
+         <div class="contact"><a href="./contact.html">Contact</a></div>
+         <i class='bx bx-menu'></i>
+      </div>
+   </nav>
+
+   <header>
+      <div class="header-container">
+         <div class="header-left header-containers">
+            <img class="images-3d" src="assets/3dguy-onthegrind.png" alt="3D Man">
+         </div>
+         <div class="header-right header-containers">
+            <h2>Website Development Service</h4>
+            <h1>Hello!<br>
+               I’m Neal!</h1>
+            <h2>Your Guide to Digital Transformation. Learn More About My Journey.</h4>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <section class="sections section-1">
+         <div class="section-1-container">
+            <div class="section-1-left containers">
+               <h2>Skills</h2>
+               <p>With a mastery of coding languages such as HTML, CSS, JavaScript, and more, I possess the technical prowess to bring digital visions to life. My expertise extends beyond mere coding; I excel in translating intricate concepts into user-friendly interfaces that captivate and engage audiences. From crafting responsive designs to implementing complex functionalities, I leverage my skills to deliver seamless and intuitive digital experiences. With a keen eye for detail and a passion for innovation, I continuously push the boundaries of possibility, ensuring that every project I undertake reflects the pinnacle of quality and excellence in the digital realm.</p>   
+            </div>
+            <div class="section-1-right containers">
+               <div class="box"></div>
+               <img class="images-3d" src="assets/3d-man-stressed.png" alt="3D Man">
+            </div>
+         </div>
+      </section>
+      <section class="sections section-2">
+         <div class="section-2-container">
+            <div class="section-2-left containers">
+               <h2>About Neal</h2>
+               <p>As the driving force behind Neal Service, I bring a wealth of experience and passion to the table. With a background in web development and a keen eye for design, I am dedicated to crafting innovative solutions that exceed client expectations. My journey in the digital realm has been fueled by a commitment to excellence and a relentless pursuit of creativity. Through continuous learning and adaptation to industry trends, I strive to stay ahead of the curve and deliver cutting-edge results for every project I undertake.</p>
+               <p>Beyond technical expertise, I pride myself on fostering strong client relationships built on trust, transparency, and effective communication. I believe in the power of collaboration and view each project as a partnership aimed at achieving shared success. By understanding the unique needs and goals of my clients, I tailor my approach to deliver solutions that not only meet but exceed their expectations. With a focus on integrity and customer satisfaction, I am dedicated to helping businesses thrive in the digital landscape.</p>  
+            </div>
+            <div class="section-2-right containers">
+               <img class="images-3d" src="assets/me.png" alt="3D Man">
+            </div>
+         </div>
+      </section>
+      <section class="sections section-3">
+         <div class="section-3-container">
+            <div class="section-3-left containers">
+               <h3>Start your website</h3>
+               <h1>Want to work with me?</h1>
+               <p>Ready to elevate your online presence? Let's collaborate! Reach out today to discuss your project.</p>   
+               <div class="contact"><a href="./contact.html">Contact</a></div>
+            </div>
+            <div class="section-3-right containers">
+               <img class="images-3d" src="assets/3dman-couch.png" alt="3D Man">
+            </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="footer-container">
+         <div class="footer-upper">
+            <a href="index.html"><img src="assets/logo-white.png" alt="Logo" width="55"></a>
+            <div class="footer-paragraph"><p>Elevate your digital presence with our tailored solutions. Let's transform your vision into reality</p></div>
+            <ul class="menu-lists">
+               <li><a href="./index.html" class="menu-links footer-links">Home</a></li>
+               <li><a href="./about.html" class="menu-links footer-links">About</a></li>
+               <li><a href="./services.html" class="menu-links footer-links">Service</a></li>
+            </ul>
+            <div class="contact"><a href="./contact.html">Contact</a></div>
+         </div>
+         <div class="footer-lower"><p>&copy; 2024 Neal Services. All Rights Reserved.</p></div>
+      </div>
+   </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+
+   <script src="js/sidebarbutton.js"></script>
+
+   <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to('.section-1', {
+         duration: 4,
+         opacity: 1,
+         ease:'back',
+         scrollTrigger: '.section-1',
+      }) 
+
+      gsap.to('.section-2', {
+         duration: 5,
+         opacity: 1,
+         ease:'back',
+         scrollTrigger: '.section-2',
+      }) 
+
+      gsap.to('.section-3', {
+         duration: 4,
+         opacity: 1,
+         ease:'back',
+         scrollTrigger: '.section-3',
+      }) 
+   </script>
+
+</body>
+
+</html>
